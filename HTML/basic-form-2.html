@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>Day-3</title>
+  </head>
+  <body>
+    <!-- user registration form 
+    User Registration From
+      full name
+      email id
+      mobile number
+      address
+      gender (male / female)
+      city
+      pincode
+      i agree
+    -->
+    <fieldset>
+      <legend>User Registration</legend>
+      <form>
+        <div>
+          <label for="">Full Name</label>
+          <input type="text" placeholder="Enter Full Name" />
+        </div>
+        <div>
+          <label for="">Email Id</label>
+          <input type="email" placeholder="Enter Email" required />
+        </div>
+
+        <div>
+          <label for="">Mobile</label>
+          <input type="number" placeholder="Enter Mobile" />
+        </div>
+
+        <div>
+          <label for="">Address</label>
+          <textarea placeholder="Enter Address" rows="10" cols="50"></textarea>
+        </div>
+
+        <div>
+          <label for="">Gender</label>
+          <div>
+            <label for="">Male</label>
+            <input type="radio" name="gender" />
+
+            <label for="">Female</label>
+            <input type="radio" name="gender" />
+          </div>
+        </div>
+
+        <div>
+          <label for="">City</label>
+          <!-- drop down -->
+          <select>
+            <option>--- Select City ---</option>
+            <option selected>Nashik</option>
+            <option>Pune</option>
+            <option>Mumbai</option>
+            <option>Akola</option>
+            <option>Nagpur</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="">Pincode</label>
+          <input type="number" placeholder="Enter Pin Code" />
+        </div>
+        <div>
+          <label for="">DBO</label>
+          <input type="date" />
+        </div>
+        <div>
+          <label for="">State You Tech Skills From 1 to 10</label>
+          <input type="range" max="10" min="0" value="5" />
+        </div>
+
+        <div>
+          <label for="">Resume</label>
+          <input type="file" />
+        </div>
+        <div>
+          <button>Sign Up</button>
+        </div>
+      </form>
+    </fieldset>
+  </body>
+</html>

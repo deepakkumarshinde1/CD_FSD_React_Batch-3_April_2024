@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body,
+input,
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+::selection {
+  background-color: red;
+  color: white;
+}
+
+/* .text::first-letter {
+  font-size: 2rem;
+  background-color: red;
+  color: white;
+} */
+.text {
+  display: flex;
+  align-items: center;
+  width: 75%;
+  flex-wrap: wrap;
+  /* border: 1px solid black; */
+  justify-content: start;
+
+  margin-bottom: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+.text::before {
+  content: "\f14a";
+  /* height: 20px;
+  width: 20px; */
+  /* background-color: red; */
+  /* border-radius: 10px; */
+  margin: 0 0.5rem;
+  font-family: FontAwesome;
+  color: green;
+  transition-property: transform, color;
+  transition-duration: 0.5s;
+}
+
+.text:hover::before {
+  transform: rotateZ(360deg);
+  color: red;
+}
+/* .text::after {
+  content: "hello";
+} */
+
+.text::after {
+  content: "";
+  height: 5px;
+  width: 20px;
+  background-color: red;
+  position: absolute;
+  top: 100%;
+
+  transition-property: width;
+  transition-duration: 0.5s;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.text:hover::after {
+  height: 5px;
+  width: 120px;
+}
+
+.btn {
+  margin-left: 3rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  box-shadow: 0 0 0 1px black;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  transition-property: box-shadow, color;
+  transition-duration: 1s;
+}
+
+.btn:hover {
+  box-shadow: 0 0 3px 1px red;
+  color: white;
+}
+
+.btn::before {
+  content: "";
+  height: 40px;
+  width: 120px;
+  background-color: red;
+  position: absolute;
+  left: -125px;
+  top: -10px;
+
+  transition-property: left;
+  transition-duration: 1s;
+
+  transform: skewX(10deg);
+  z-index: -1;
+}
+
+.btn:hover::before {
+  left: -20px;
+}

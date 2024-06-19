@@ -1,0 +1,28 @@
+/* 1000px  or greater then*/
+body {
+  background-color: green;
+}
+
+/* 1000px  or less then*/
+
+@media screen and (max-width: 1000px) {
+  body {
+    background-color: red;
+  }
+}
+
+/* 700px  or less then*/
+
+@media screen and (max-width: 700px) {
+  body {
+    background-color: brown;
+  }
+}
+
+/* 600px  or less then*/
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: magenta;
+  }
+}

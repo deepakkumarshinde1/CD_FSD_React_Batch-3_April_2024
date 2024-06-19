@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+.btn {
+  border: none;
+  background-color: #ca8fe1;
+  color: #ffffff;
+
+  box-shadow: 2px 2px 1px 0px #725229;
+  /* x-axis(H) y-axis(V) blur scale color */
+}

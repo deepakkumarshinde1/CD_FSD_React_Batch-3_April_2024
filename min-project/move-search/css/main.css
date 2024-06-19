@@ -1,0 +1,117 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Jersey+10+Charted&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+  font-family: "Poppins";
+}
+
+.test {
+  background-color: lightblue;
+  border: 1px solid black;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.header {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.search {
+  margin-left: 1rem;
+  padding: 0.5rem 1.5rem;
+
+  border: 1px solid #2874a6;
+  border-radius: 5px;
+
+  background-color: white;
+  color: #2874a6;
+
+  transition-property: background-color, color;
+  transition-duration: 500ms;
+}
+
+.search:hover {
+  background-color: #2874a6;
+  color: white;
+  cursor: pointer;
+}
+
+.search:active {
+  background-color: #308cca;
+}
+
+.search-input {
+  width: 40%;
+  padding: 0.5rem 1.5rem;
+  outline: none;
+  border: 1px solid #2874a6;
+  border-radius: 5px;
+
+  transition-property: box-shadow;
+  transition-duration: 500ms;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 5px 0 #2874a6;
+}
+
+.movie-content-area {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.movie-content-details {
+  width: 60%;
+}
+
+.movie-content-details > h2,
+.movie-content-details > p {
+  margin-bottom: 1rem;
+
+  font-weight: 300;
+  font-style: normal;
+}
+
+.movie-content-details > .title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.movie-content-details > .title > small {
+  font-size: 1rem;
+}
+
+.movie-content-details > p > span {
+  font-weight: bold;
+  color: #2874a6;
+}
+
+.movie-content-details > .reset > span {
+  font-weight: 300;
+  color: black;
+}
+
+.movie-content-area .poster {
+  transition-property: box-shadow, transform;
+  transition-duration: 0.5s;
+}
+.movie-content-area .poster:hover {
+  box-shadow: 0 0 15px 2px #2874a6;
+  transform: scale(1.05);
+  cursor: pointer;
+}

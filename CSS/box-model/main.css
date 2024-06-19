@@ -1,0 +1,38 @@
+#h1-id {
+  background-color: magenta;
+}
+
+.bg-pink {
+  background-color: pink;
+}
+
+h1 {
+  background-color: red;
+  color: white;
+}
+
+.div {
+  width: 200px;
+  height: 200px;
+  /* background-color: magenta; */
+  color: black;
+  padding: 20px;
+  /* padding-bottom: 20px; */
+
+  /* border-color: red;
+  border-width: 5px;
+  border-style: dashed; */
+
+  /* short hand for border */
+  /* border: solid green 2px; */
+}
+
+.btn {
+  background-color: lightcoral;
+  border: none;
+  color: white;
+  border-bottom: 2px solid green;
+
+  padding-left: 15px;
+  padding-right: 15px;
+}

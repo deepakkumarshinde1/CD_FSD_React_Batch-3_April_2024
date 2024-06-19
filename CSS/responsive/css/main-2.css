@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+/*  custom props */
+:root {
+  --bg-blue: blue;
+  --primary-color: red;
+  --secondary-color: green;
+  --main-section: 3;
+}
+.main-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: calc(100% / var(--main-section));
+  height: 50vh;
+}
+.section-1 {
+  background-color: var(--primary-color);
+}
+
+.section-2 {
+  background-color: var(--secondary-color);
+}
+
+.section-3 {
+  background-color: var(--bg-blue);
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --main-section: 1;
+  }
+
+  .section-3 {
+    width: calc(100% / 2);
+  }
+}

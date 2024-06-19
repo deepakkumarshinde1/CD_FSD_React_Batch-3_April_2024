@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .animateColor {
+        animation: myColor;
+        animation-duration: 250ms;
+        animation-iteration-count: infinite;
+      }
+      .change {
+        font-style: italic;
+        background-color: red;
+        color: white;
+      }
+
+      @keyframes myColor {
+        0% {
+          background-color: red;
+        }
+
+        100% {
+          background-color: green;
+        }
+      }
+
+      .section-class {
+        display: flex;
+      }
+      .section-class > div {
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        border-radius: 50%;
+        margin: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" class="inputText" />
+    <button id="changeText">Click</button>
+    <section class="">Hello</section>
+
+    <section id="section-id"></section>
+    <script src="./main.js"></script>
+  </body>
+</html>

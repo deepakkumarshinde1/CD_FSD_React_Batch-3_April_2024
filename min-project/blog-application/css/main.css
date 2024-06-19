@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 2px 3px 0 gray;
+
+  padding: 1rem 4rem;
+}
+
+.menu,
+.user-menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu > li,
+.user-menu > li {
+  margin: 0 1rem;
+}
